@@ -18,6 +18,7 @@
 #include <osgDB/ReadFile>
 #include <osgUtil/Optimizer>
 #include <osg/PositionAttitudeTransform>
+#include <osg/ShapeDrawable>
 
 #include <string>
 #include <iostream>
@@ -151,12 +152,53 @@ int main(int argc, char** argv) {
 	osg::ref_ptr<osg::Group> textGroup = loadInfo(dataset, position);
 	root->addChild(textGroup);
 
-	//Pour afficher des cercles sous les textes pour repérer la position sur la carte
-	/*osg::ref_ptr(osg::Shape) myCircle (new osg::EllipsoidModel);
-	osg::ref_ptr<osg::Group> CircleGroup (new osg::Group);
 
-	for(int i=0, i<textGroup->getNumChildren(), i++){
-    }*/
+	//Pour afficher des cercles sous les textes pour repérer la position sur la carte
+	osg::ref_ptr<osg::Shape> myCircle (new osg::Cylinder(osg::Vec3d(0.0, 0.0, 0.0), 10.0f, 0.0f));
+	osg::ref_ptr<osg::ShapeDrawable> circleDrawable (new osg::ShapeDrawable(myCircle.get()));
+
+	circleDrawable->setColor(osg::Vec4d(0.0,0.0,0.0,0.5));
+
+	osg::ref_ptr<osg::Group> circleGroup (new osg::Group);
+	osg::ref_ptr<osg::Geode> circleGeode (new osg::Geode);
+
+    const XMLCh* xmlch_x;
+    const XMLCh* xmlch_y;
+    const XMLCh* xmlch_z;
+
+    root->addChild(circleGroup.get());
+
+	for(int i=0; i < (position->getLength()); i++){
+        osg::Vec3d positionTexte;
+
+        DOMNode* positionNode = position->item(i);
+        DOMElement* positionElement = dynamic_cast<xercesc::DOMElement*>(positionNode);
+
+        xmlch_x = positionElement->getAttribute(XMLString::transcode("X"));
+        xmlch_y = positionElement->getAttribute(XMLString::transcode("Y"));
+        xmlch_z = positionElement->getAttribute(XMLString::transcode("Z"));
+
+        osg::Vec3 ObjTextPos;
+        ObjTextPos.set(atoi(XMLString::transcode(xmlch_x)),
+						atoi(XMLString::transcode(xmlch_y)),
+						atoi(XMLString::transcode(xmlch_z)));
+
+
+        osg::ref_ptr<osg::PositionAttitudeTransform> positionCourant (new osg::PositionAttitudeTransform);
+
+        positionCourant->setPosition(ObjTextPos);
+
+        circleGeode->addChild(new osg::Geode);
+        osg::Geode* noeudCourant = circleGeode->getChild(i)->asGeode();
+
+        noeudCourant->addDrawable(circleDrawable.get());
+
+        circleGroup->addChild(positionCourant);
+        positionCourant->addChild(noeudCourant);
+
+    }
+
+
 
 	//Define the viewer
 	osg::ref_ptr<osgViewer::Viewer> viewer = new osgViewer::Viewer;
