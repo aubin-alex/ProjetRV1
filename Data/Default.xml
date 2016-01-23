@@ -1,0 +1,7 @@
+<?xml version = "1.0" encoding="utf8" standalone="yes" ?>
+<Dataset Name="The default dataset"> 
+<Info Name="This is a test dataset" X="355913" Y="6688900" Z="39.5" LOI="2" Content="Crossroads of world music, current and traditional, to hear&#xa; artists sometimes incurred. Duets with artists, Nantes"></Info>
+<Info Name="Infovis in 3D urban environment" X="356913" Y="6690600" Z="29.7016" LOI="3" Content="Outdoor exhibits fell to &#xa; nights in the city park"></Info>
+<Info Name="User test training" X="353913" Y="6690050" Z="37.6998" LOI="2" Content="Shows early childhood school from six years to the youth &#xa; of the university find the program of activities for children &#xa; in cultural centers and theaters in Nantes: &#xa; clown, magician, puppet and other activities for children"></Info>
+<Info Name="Just to illustrate how to interact with the system" X="355400" Y="6688250" Z="37.8152" LOI="1" Content="Actors turn the pages of a novel, a story &#xa; or a collection of poems. We see, we hear, &#xa; we touch and taste it too ... Our senses are &#xa; the honor of this trip in literature"></Info>
+</Dataset>
