@@ -154,10 +154,11 @@ int main(int argc, char** argv) {
 
 
 	//Pour afficher des cercles sous les textes pour repérer la position sur la carte
+
 	osg::ref_ptr<osg::Shape> myCircle (new osg::Cylinder(osg::Vec3d(0.0, 0.0, 0.0), 10.0f, 0.0f));
 	osg::ref_ptr<osg::ShapeDrawable> circleDrawable (new osg::ShapeDrawable(myCircle.get()));
 
-	circleDrawable->setColor(osg::Vec4d(0.0,0.0,0.0,0.5));
+	circleDrawable->setColor(osg::Vec4d(0.0,0.0,0.0,1.0));
 
 	osg::ref_ptr<osg::Group> circleGroup (new osg::Group);
 	osg::ref_ptr<osg::Geode> circleGeode (new osg::Geode);
@@ -182,7 +183,6 @@ int main(int argc, char** argv) {
         ObjTextPos.set(atoi(XMLString::transcode(xmlch_x)),
 						atoi(XMLString::transcode(xmlch_y)),
 						atoi(XMLString::transcode(xmlch_z)));
-
 
         osg::ref_ptr<osg::PositionAttitudeTransform> positionCourant (new osg::PositionAttitudeTransform);
 
