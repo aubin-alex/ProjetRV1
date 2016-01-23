@@ -7,6 +7,7 @@
  */
 
 #include <osgText/Text>
+#include <osgText/TextBase>
 #include <osgText/FadeText>
 
 #include <osg/Group>
