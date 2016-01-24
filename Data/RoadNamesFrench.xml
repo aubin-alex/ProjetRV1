@@ -50,7 +50,7 @@
 <Info Name="Quai des Antilles" LOI="1" Content="Actress Nantes since 1990, Claudine Bonhomme &#xa; indulges his feelings to describe nature in its &#xa; perceptible noises and sounds in its shapes &#xa; and colors, in its scents and perfumes, in its &#xa; sweetness and flavor"></Info>
 <Info Name="Rue Basse-Creuse" LOI="2" Content="Sight, smell, hearing, taste and touch &#xa; all our senses are awakened in nature. &#xa; Sophie Renou, actress of the Faithful idea, &#xa; it also seeks to expand its 6th sense"></Info>
 <Info Name="Rue d'Allonville" LOI="3" Content="Founder of Theatre Reflection, Eric Ferrat &#xa; uses his nose, his eyes, his ears, his tongue &#xa; and hands to play a character in every sense"></Info>
-<Info Name="Place Royale" LOI="3" Content=" "></Info>
+<Info Name="Jardin des Plantes" LOI="3" Content=" "></Info>
 <Info Name="FNAC" LOI="3" Content=" "></Info>
 <Info Name="Cinema Gaumont" LOI="3" Content=" "></Info>
 <Info Name="Passage Pommeraye" LOI="3" Content=" "></Info>
@@ -64,7 +64,7 @@
 <Info Name="Audencia" LOI="3" Content=" "></Info>
 <Info Name="La Saint-Pierre" LOI="3" Content=" "></Info>
 <Info Name="RU du Tertre" LOI="3" Content=" "></Info>
-<Info Name="Gare SNCF" LOI="3" Content=" "></Info>
+<Info Name="place Royale" LOI="3" Content=" "></Info>
 <Info Name="Pirmil" LOI="3" Content=" "></Info>
 <Info Name="Mangin" LOI="3" Content=" "></Info>
 <Info Name="Wattignies" LOI="3" Content=" "></Info>
@@ -89,7 +89,7 @@
 <Info Name="Poitou" LOI="3" Content=" "></Info>
 <Info Name="CC Beaulieu" LOI="3" Content=" "></Info>
 <Info Name="Les Machines de l'ile" LOI="3" Content=" "></Info>
-<Info Name="Jardin des Plantes" LOI="3" Content=" "></Info>
+<Info Name="Gare SNCF Nord" LOI="3" Content=" "></Info>
 <Info Name="Musee Dobree" LOI="3" Content=" "></Info>
 <Info Name="Prefecture" LOI="3" Content=" "></Info>
 <Info Name="Le Lieu Unique" LOI="3" Content=" "></Info>
@@ -147,6 +147,15 @@
 <Info Name="Porte de Goulaine" LOI="3" Content=" "></Info>
 <Info Name="Porte de la Chapelle" LOI="3" Content=" "></Info>
 <Info Name="Mairie de Nantes" LOI="3" Content=" "></Info>
-
-
+<Info Name="Gare SNCF Sud" LOI="3" Content=" "></Info>
+<Info Name="Coudray" LOI="3" Content=" "></Info>
+<Info Name="Lallie" LOI="3" Content=" "></Info>
+<Info Name="Belges-Montbazon" LOI="3" Content=" "></Info>
+<Info Name="Guindre" LOI="3" Content=" "></Info>
+<Info Name="Tremissiniere" LOI="1" Content=" "></Info>
+<Info Name="Audubon" LOI="1" Content=" "></Info>
+<Info Name="Saint-Nicolas" LOI="1" Content=" "></Info>
+<Info Name="BACF" LOI="1" Content=" "></Info>
+<Info Name="V.Tourre" LOI="1" Content=" "></Info>
+<Info Name="Rue des Freres Mano" LOI="1" Content=" "></Info>
 </Dataset>
